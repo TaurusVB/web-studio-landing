@@ -1,0 +1,53 @@
+.services {
+
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    &__item {
+        text-align: center;
+        margin-bottom: 30px;
+
+        @include tablet {
+            width: calc((100% - 60px)/2);
+            margin: 15px;
+        }
+
+        @include desktop {
+            width: 270px;
+        }
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;        
+    }
+
+    &__border {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        border-radius: 4px;
+        background-color: $secondary-background-color;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        color: $title-color;
+
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        display: flex;
+        text-align: start;
+
+        color: var(--main-color);
+    }
+}

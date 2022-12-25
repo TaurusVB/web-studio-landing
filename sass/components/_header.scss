@@ -1,0 +1,348 @@
+.page-header {
+    display: block;
+    border-bottom: 1px solid #ECECEC;
+
+    &__container {
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+        padding-top: 0;
+
+        @include tablet {
+            width: $tablet;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        @include desktop {
+            width: $desktop;
+        }
+    }
+
+    &__main-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__logo {
+        color: $secondary-color;
+
+    }
+
+    &__leftpart-logo {
+        color: $accent-color;
+    }
+
+    &__mobile {
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.site-nav {
+    display: flex;
+
+    @include tablet {
+        margin-left: 88px;
+    }
+
+    @include desktop {
+        margin-left: 93px;
+    }
+    
+    &__item {
+        margin-right: 50px;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__link {
+        position: relative;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        display: inline-flex;
+        align-items: center;
+
+        color: $title-color;
+        fill: $main-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+    }
+
+    &__link:hover, &__link:focus {
+        color: $accent-color;
+        fill: $accent-color;
+    }
+
+    &__current-page {
+        color: $accent-color;
+    }
+
+    &__current-page::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+
+        content: "";
+        background-color: $accent-color;
+        border-radius: 2px;
+    }
+    
+}
+
+.auth-nav {
+    display: flex;
+
+    @include tablet {
+        display: block;
+        margin-left: 90px;
+    }
+
+    @include desktop {
+        display: flex;
+        margin-left: auto;
+        margin-left: 305px;
+    }
+
+    &__item {
+        margin-top: 21px;
+
+        @include desktop {
+            margin-right: 40px;
+            margin-top: 0;
+        }
+    }
+
+    &__item:last-child {
+        margin-top: 10px;
+
+        @include desktop {
+            margin-right: 0;
+            margin-top: 0;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+        color: $main-color;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+
+        @include desktop {
+            display: flex;
+            padding-top: 32px;
+            padding-bottom: 32px;
+            align-items: center;
+
+            font-size: 14px;
+        }
+    }
+
+    &__link:hover, &__link:focus {
+        color: $accent-color;
+        fill: $accent-color;
+    }
+
+    &__letter-icon {
+        fill: currentColor;
+
+        margin-right: 8px;
+        width: 14px;
+        height: 10px;
+
+        @include desktop {
+            width: 16px;
+            height: 12px; 
+        }
+    }
+
+    &__phone-icon {
+        fill: currentColor;
+
+        margin-right: 8px;
+        width: 10px;
+        height: 14px;
+
+        @include desktop {
+            width: 12px;
+            height: 16px; 
+        }
+    }
+}
+
+.site-auth-container {
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    
+
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 40px;
+    background-color: $main-background-color;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-nav {
+
+    &__item {
+        margin-bottom: 32px;    
+
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+    }
+
+    &__item:last-child {
+        margin-bottom: 306px;
+    }
+
+    &__link {
+        color: $title-color;
+    }
+
+    &__link:hover, &__link:focus {
+        color: $accent-color;
+    }
+
+    &__link-tel {
+        color: $accent-color;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+    }
+
+    &__link-mail {
+        
+    }
+}
+
+.menu-auth-nav {
+    
+    &__item {
+        margin-bottom: 32px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 64px;
+    }
+
+    &__link {
+
+    }
+
+    &__link-tel {
+        color: $accent-color;
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.18;
+        letter-spacing: 0.02em;
+    }
+
+    &__link-mail {
+        color: $main-color;
+
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.02em;
+    }
+}
+
+.menu-socials {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+        padding-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        margin-right: 10px;
+    }
+
+    &__item:last-child {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link {
+         color: $accent-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+    }
+}
+
+.button-mobile-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: transparent;
+    border: none;
+
+    @include tablet {
+        display: none;
+    }
+
+    &:hover, &:focus {
+        fill: $accent-color;
+    }
+}
+
+.menu-close-btn {
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+
+    background-color: transparent;
+    border: none;
+
+    &:hover, &:focus {
+        fill: $accent-color;
+    }
+}

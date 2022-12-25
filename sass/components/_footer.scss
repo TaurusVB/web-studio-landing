@@ -1,0 +1,156 @@
+.footer {
+    background-color: $black-bg-color;
+}
+
+.section-footer {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    @include desktop {
+        text-align: left;
+        display: flex;
+        align-items: baseline;
+    }
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 28px;
+    color: $white-text-color;
+}
+
+.footer__leftpart-logo {
+    color: $accent-color;
+}
+
+.footer-nav {
+
+    &__item {
+        margin-bottom: 12px;
+
+        @include desktop {
+            width: 231px;
+        }
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__link {
+        color: rgba(255, 255, 255, 0.6);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        text-decoration: none;
+        font-style: normal;
+    }
+
+    &__link:hover, &__link:focus {
+        color: $accent-color;
+        fill: $accent-color;
+    }
+
+    &__adress {
+        color: $white-text-color;
+    }
+}
+
+.container-footer {
+    margin-top: 60px;
+
+    &:first-child {
+        margin-top: 0;
+
+        @include desktop {
+            margin-right: 70px;
+        }
+    }
+
+    @include desktop {
+        margin-left: auto;
+        margin-top: 0;
+    }
+}
+.footer-slogan {
+    color: $main-background-color;
+    size: 14px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.footer-socials {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    &__icon {
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: $main-background-color;
+    }
+}
+
+.signup {
+    @include desktop {
+        display: flex;
+    }
+
+    &-form {
+        margin-right: auto;
+    }
+
+    &__email {
+        width: calc(100% - 2 * 15px);
+        height: 50px;
+        padding-left: 15px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        background-color: $black-bg-color;
+
+        @include mobile {
+            width: 450px;
+        }
+
+        @include desktop {
+            width: 358px;
+            margin-right: 12px;
+        }
+    }
+
+    &__email:focus-visible {
+        color: $main-background-color;
+    }
+
+    &__text {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: var(--main-background-color);
+    }
+}
+
+.footer-conteiner--flex {
+    @media screen and (min-width:$tablet) and (max-width: 1199px) {
+        &>.container-footer {
+            margin-top: 0;
+        }
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: baseline;
+    }
+
+    @include desktop {
+        display: flex;
+        align-items: baseline;
+    }
+}

@@ -1,0 +1,89 @@
+body {
+    color: $main-color;
+    background-color: var(--main-background-color);
+
+    font-size: 14px;
+    line-height: 1.71;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @include desktop {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+
+    &--no-padding {
+        padding-bottom: 0;
+
+        @media screen and (max-width: 1199px) {
+            padding-bottom: 60px;
+        }
+    }
+
+    &--grey {
+        background-color: $secondary-background-color;
+    }
+}
+
+.container {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @include mobile {
+        width: $mobile;
+    }
+
+    @include tablet {
+        width: $tablet;
+    }
+
+    @include desktop {
+        width: $desktop;
+    }
+
+}
+
+.global-title {
+    margin-bottom: 30px;
+
+    color: $title-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.logo {
+    color: $secondary-color;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+
+    @include desktop {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}
+
+.btn--no-padding {
+    padding: 0;
+}
+
+.section--disp-none {
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+}

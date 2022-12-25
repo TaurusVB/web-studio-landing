@@ -1,0 +1,85 @@
+.our-team {
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+        justify-content: center; 
+    }
+
+    &__item {
+        background-color: $main-background-color;
+        margin-bottom: 30px;
+        
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+
+        @media screen and (min-width: $mobile) and (max-width: 767px) {
+            width: 450px;
+        }
+
+        @include tablet {
+            width: calc((100% - 60px)/2);
+            margin: 15px;
+        }
+
+        @include desktop {
+            width: 270px;
+        }
+    }
+
+    &__item:last-child {
+        @media screen and (max-width: 767px) {
+            margin-bottom: 0;
+        }
+
+        
+    }
+
+    &__name {
+        padding-top: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+        color: $title-color;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+
+    &__position {
+        margin-bottom: 16px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.19;
+    }
+}
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+    
+    padding-bottom: 30px;
+
+    
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__link {
+        border-radius: 50%;
+        height: 44px;
+        width: 44px;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $main-background-color;
+        fill: $secondary-border-color;
+    }
+
+    &__link:hover, &__link:focus {
+        background-color: $accent-color;
+        fill: $main-background-color;
+    }
+}
