@@ -23,6 +23,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 
+    @include desktop {
+        width: 528px;
+    }
+
     &__close {
         display: flex;
         width: 30px;
@@ -156,8 +160,13 @@
         position: relative;
         margin-left: 24px;
 
-        font-size: 14px;
-        line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.17;
+
+        @include desktop {
+            font-size: 14px;
+            line-height: 1.71;
+        }
     }
 
     &__checkbox {
@@ -173,7 +182,7 @@
 
     &__true-checkbox {
         position: absolute;
-        top: 1px;
+        top: 0;
         left: -23px;
         width: 16px;
         height: 15px;
@@ -198,6 +207,10 @@
 
     &__link {
         color: $accent-color;
+    }
+
+    &__button {
+        margin-bottom: 20px;
     }
 }
 

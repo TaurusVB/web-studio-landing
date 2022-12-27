@@ -199,6 +199,8 @@
 }
 
 .menu-container {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -220,6 +222,7 @@
 }
 
 .menu-nav {
+    margin-bottom: auto;
 
     &__item {
         margin-bottom: 32px;    
@@ -231,7 +234,7 @@
     }
 
     &__item:last-child {
-        margin-bottom: 306px;
+        margin-bottom: 0;
     }
 
     &__link {

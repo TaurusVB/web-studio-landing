@@ -345,6 +345,8 @@ a {
 }
 
 .menu-container {
+  display: flex;
+  flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
@@ -366,6 +368,9 @@ a {
   transform: translateX(0);
 }
 
+.menu-nav {
+  margin-bottom: auto;
+}
 .menu-nav__item {
   margin-bottom: 32px;
   font-weight: 500;
@@ -374,7 +379,7 @@ a {
   letter-spacing: 0.02em;
 }
 .menu-nav__item:last-child {
-  margin-bottom: 306px;
+  margin-bottom: 0;
 }
 .menu-nav__link {
   color: #212121;
@@ -983,6 +988,11 @@ a {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
 .modal__close {
   display: flex;
   width: 30px;
@@ -1096,8 +1106,14 @@ a {
 .form-conditions__label {
   position: relative;
   margin-left: 24px;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
+}
+@media screen and (min-width: 1200px) {
+  .form-conditions__label {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .form-conditions__checkbox {
   position: absolute;
@@ -1110,7 +1126,7 @@ a {
 }
 .form-conditions__true-checkbox {
   position: absolute;
-  top: 1px;
+  top: 0;
   left: -23px;
   width: 16px;
   height: 15px;
@@ -1131,4 +1147,7 @@ a {
 }
 .form-conditions__link {
   color: #2196F3;
+}
+.form-conditions__button {
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
