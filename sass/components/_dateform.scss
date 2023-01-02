@@ -25,6 +25,7 @@
 
     @include desktop {
         width: 528px;
+        min-height: 581px;
     }
 
     &__close {

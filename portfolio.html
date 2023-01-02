@@ -55,39 +55,39 @@
            
     
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-close-btn js-close-menu">
-            <svg width="40" height="40">
-                <use href="./images/symbol-defs.svg#icon-close"></use>
-            </svg>
-        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-close-btn js-close-menu">
+                <svg width="40" height="40">
+                    <use href="./images/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
 
-        <ul class="menu-nav list">
-            <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link" >Студія</a></li>
-            <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link">Портфоліо</a></li>
-            <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link">Контакти</a></li>
-        </ul>
+            <ul class="menu-nav list">
+                <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link" >Студія</a></li>
+                <li class="menu-nav__item"><a href="./portfolio.html" class="menu-nav__link">Портфоліо</a></li>
+                <li class="menu-nav__item"><a href="./index.html" class="menu-nav__link">Контакти</a></li>
+            </ul>
 
-        <div>
-            <ul class="menu-auth-nav list">
-                <li class="menu-auth-nav__item">
-                    <a href="tel:+380961111111" class="menu-auth-nav__link menu-auth-nav__link-tel">
-                    +38 096 111 11 11</a>
-                </li>
-                <li class="menu-auth-nav__item">
-                    <a href="mailto:info@devstudio.com" class="menu-auth-nav__link menu-auth-nav__link-mail">
-                    info@devstudio.com</a>
-                </li>
-            </ul>
-    
-            <ul class="menu-socials">
-                <li class="menu-socials__item"><a class="menu-socials__link" href="">Istagram</a></li>
-                <li class="menu-socials__item"><a class="menu-socials__link" href="">Twitter</a></li>
-                <li class="menu-socials__item"><a class="menu-socials__link" href="">Facebook</a></li>
-                <li class="menu-socials__item"><a class="menu-socials__link" href="">LinkedIn</a></li>
-            </ul>
+            <div class="container-auth-soc">
+                <ul class="menu-auth-nav list">
+                    <li class="menu-auth-nav__item">
+                        <a href="tel:+380961111111" class="menu-auth-nav__link menu-auth-nav__link-tel">
+                        +38 096 111 11 11</a>
+                    </li>
+                    <li class="menu-auth-nav__item">
+                        <a href="mailto:info@devstudio.com" class="menu-auth-nav__link menu-auth-nav__link-mail">
+                        info@devstudio.com</a>
+                    </li>
+                </ul>
+        
+                <ul class="menu-socials">
+                    <li class="menu-socials__item"><a class="menu-socials__link" href="">Istagram</a></li>
+                    <li class="menu-socials__item"><a class="menu-socials__link" href="">Twitter</a></li>
+                    <li class="menu-socials__item"><a class="menu-socials__link" href="">Facebook</a></li>
+                    <li class="menu-socials__item"><a class="menu-socials__link" href="">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
     </header>
 
@@ -107,7 +107,15 @@
                     <li class="projects__item">
                         <a href="#" class="projects__link">
                             <div class="projects__description">
-                                <img src="./images/example_1.jpg" alt="our work" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/portfolio_main_content/example1_mobile.jpg 1x, ./images/portfolio_main_content/example1_mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                                    <source srcset="./images/portfolio_main_content/example1_tablet.jpg 1x, ./images/portfolio_main_content/example1_tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px, 50vw">
+                                    <source srcset="./images/portfolio_main_content/example1_desktop.jpg 1x, ./images/portfolio_main_content/example1_desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 25vw">
+                                    <img src="./images/portfolio_main_content/example1_desktop.jpg" alt="our work">
+                                </picture>
                                 <p class="projects__text-description">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                             </div>
                             <div class="card-content">
@@ -119,7 +127,15 @@
                     <li class="projects__item">
                         <a href="#" class="projects__link">
                             <div class="projects__description">
-                                <img src="./images/example_2.jpg" alt="our work" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/portfolio_main_content/example2_mobile.jpg 1x, ./images/portfolio_main_content/example2_mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                                    <source srcset="./images/portfolio_main_content/example2_tablet.jpg 1x, ./images/portfolio_main_content/example2_tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px, 50vw">
+                                    <source srcset="./images/portfolio_main_content/example2_desktop.jpg 1x, ./images/portfolio_main_content/example2_desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 25vw">
+                                    <img src="./images/portfolio_main_content/example2_desktop.jpg" alt="our work">
+                                </picture>
                                 <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
                             </div>
                             <div class="card-content">
@@ -131,7 +147,15 @@
                     <li class="projects__item">
                         <a href="#" class="projects__link">
                             <div class="projects__description">
-                                <img src="./images/example_3.jpg" alt="our work" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/portfolio_main_content/example3_mobile.jpg 1x, ./images/portfolio_main_content/example3_mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                                    <source srcset="./images/portfolio_main_content/example3_tablet.jpg 1x, ./images/portfolio_main_content/example3_tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px, 50vw">
+                                    <source srcset="./images/portfolio_main_content/example3_desktop.jpg 1x, ./images/portfolio_main_content/example3_desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 25vw">
+                                    <img src="./images/portfolio_main_content/example3_desktop.jpg" alt="our work">
+                                </picture>
                                 <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
                             </div>                            
                             <div class="card-content">
@@ -143,7 +167,15 @@
                     <li class="projects__item">
                         <a href="#" class="projects__link">
                             <div class="projects__description">
-                                <img src="./images/example_4.jpg" alt="our work" width="370" height="294">
+                                <picture>
+                                    <source srcset="./images/portfolio_main_content/example4_mobile.jpg 1x, ./images/portfolio_main_content/example4_mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                                    <source srcset="./images/portfolio_main_content/example4_tablet.jpg 1x, ./images/portfolio_main_content/example4_tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px, 50vw">
+                                    <source srcset="./images/portfolio_main_content/example4_desktop.jpg 1x, ./images/portfolio_main_content/example4_desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 25vw">
+                                    <img src="./images/portfolio_main_content/example4_desktop.jpg" alt="our work">
+                                </picture>                                
                                 <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
                             </div>                            
                             <div class="card-content">
@@ -155,8 +187,15 @@
                     <li class="projects__item">
                         <a href="#" class="projects__link">
                             <div class="projects__description">
-                                <img src="./images/example_5.jpg" alt="our work" width="370" height="294">
-                                <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
+                                <picture>
+                                    <source srcset="./images/portfolio_main_content/example5_mobile.jpg 1x, ./images/portfolio_main_content/example5_mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                                    <source srcset="./images/portfolio_main_content/example5_tablet.jpg 1x, ./images/portfolio_main_content/example5_tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px, 50vw">
+                                    <source srcset="./images/portfolio_main_content/example5_desktop.jpg 1x, ./images/portfolio_main_content/example5_desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 25vw">
+                                    <img src="./images/portfolio_main_content/example5_desktop.jpg" alt="our work">
+                                </picture>                                <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
                             </div>                            
                             <div class="card-content">
                                 <h2 class="card-content__title">Проєкт Boxes</h2>
@@ -167,8 +206,15 @@
                     <li class="projects__item">
                         <a href="#" class="projects__link">
                             <div class="projects__description">
-                                <img src="./images/example_6.jpg" alt="our work" width="370" height="294">
-                                <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
+                                <picture>
+                                    <source srcset="./images/portfolio_main_content/example6_mobile.jpg 1x, ./images/portfolio_main_content/example6_mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                                    <source srcset="./images/portfolio_main_content/example6_tablet.jpg 1x, ./images/portfolio_main_content/example6_tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px, 50vw">
+                                    <source srcset="./images/portfolio_main_content/example6_desktop.jpg 1x, ./images/portfolio_main_content/example6_desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 25vw">
+                                    <img src="./images/portfolio_main_content/example6_desktop.jpg" alt="our work">
+                                </picture>                                <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
                             </div>                            
                             <div class="card-content">
                                 <h2 class="card-content__title">Inspiration has no Borders</h2>
@@ -179,8 +225,15 @@
                     <li class="projects__item">
                         <a href="#" class="projects__link">
                             <div class="projects__description">
-                                <img src="./images/example_7.jpg" alt="our work" width="370" height="294">
-                                <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
+                                <picture>
+                                    <source srcset="./images/portfolio_main_content/example7_mobile.jpg 1x, ./images/portfolio_main_content/example7_mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                                    <source srcset="./images/portfolio_main_content/example7_tablet.jpg 1x, ./images/portfolio_main_content/example7_tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px, 50vw">
+                                    <source srcset="./images/portfolio_main_content/example7_desktop.jpg 1x, ./images/portfolio_main_content/example7_desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 25vw">
+                                    <img src="./images/portfolio_main_content/example7_desktop.jpg" alt="our work">
+                                </picture>                                <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
                             </div>                            
                             <div class="card-content">
                                 <h2 class="card-content__title">Видання Limited Edition</h2>
@@ -191,8 +244,15 @@
                     <li class="projects__item">
                         <a href="#" class="projects__link">
                             <div class="projects__description">
-                                <img src="./images/example_8.jpg" alt="our work" width="370" height="294">
-                                <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
+                                <picture>
+                                    <source srcset="./images/portfolio_main_content/example8_mobile.jpg 1x, ./images/portfolio_main_content/example8_mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                                    <source srcset="./images/portfolio_main_content/example8_tablet.jpg 1x, ./images/portfolio_main_content/example8_tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px, 50vw">
+                                    <source srcset="./images/portfolio_main_content/example8_desktop.jpg 1x, ./images/portfolio_main_content/example8_desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 25vw">
+                                    <img src="./images/portfolio_main_content/example8_desktop.jpg" alt="our work">
+                                </picture>                                <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
                             </div>                            
                             <div class="card-content">
                                 <h2 class="card-content__title">Проєкт LAB</h2>
@@ -203,8 +263,15 @@
                     <li class="projects__item">
                         <a href="#" class="projects__link">
                             <div class="projects__description">
-                                <img src="./images/example_9.jpg" alt="our work" width="370" height="294">
-                                <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
+                                <picture>
+                                    <source srcset="./images/portfolio_main_content/example9_mobile.jpg 1x, ./images/portfolio_main_content/example9_mobile@2x.jpg 2x"
+                                    media="(max-width: 767px)" sizes="(min-width: 480px) 480px, 100vw">
+                                    <source srcset="./images/portfolio_main_content/example9_tablet.jpg 1x, ./images/portfolio_main_content/example9_tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)" sizes="(min-width: 768px) 768px, 50vw">
+                                    <source srcset="./images/portfolio_main_content/example9_desktop.jpg 1x, ./images/portfolio_main_content/example9_desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)" sizes="(min-width: 1200px) 1200px, 25vw">
+                                    <img src="./images/portfolio_main_content/example9_desktop.jpg" alt="our work">
+                                </picture>                                <p class="projects__text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, accusantium! Ex, harum itaque.</p>
                             </div>                            
                             <div class="card-content">
                                 <h2 class="card-content__title">Growing Business</h2>
