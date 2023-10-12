@@ -3,6 +3,8 @@
 Welcome to the WebStudio repository, your go-to source for mobile and desktop app development
 services and design solutions.
 
+**Please note**: This project was created as a final project during my HTML and CSS learning journey. It is written in pure HTML, SASS, and follows BEM methodology.
+
 ## About WebStudio
 
 At WebStudio, we specialize in creating innovative mobile and desktop applications tailored to your
